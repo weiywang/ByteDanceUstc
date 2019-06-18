@@ -1,4 +1,4 @@
-package String;
+package main.java.String;
 
 public class LongestSubStr {
 	public static int longestSubString(String s){

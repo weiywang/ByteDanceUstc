@@ -1,4 +1,4 @@
-package LinkListAndTree;
+package main.java.LinkListAndTree;
 
 public class CombineTwoList {
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
