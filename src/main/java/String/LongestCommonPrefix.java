@@ -15,11 +15,11 @@ public class LongestCommonPrefix {
         }
         int n = strs.length;
         String result = "";
-        for(int j = 0; ;j++){
+        for(int j = 0;j < strs[0].length();j++){
             char temp = strs[0].toCharArray()[j];
             boolean tempBool = true;
             for(int i = 1;i < n;i++){
-                if(strs[i].toCharArray()[j] == temp) continue;
+                if(strs[i].length() >= j+1 && strs[i].toCharArray()[j] == temp) continue;
                 else {
                     tempBool = false;
                 }
