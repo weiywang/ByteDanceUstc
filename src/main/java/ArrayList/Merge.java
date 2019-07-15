@@ -13,14 +13,20 @@ public class Merge {
         intervals = sort(intervals);
 
         for(int i = 1; i < intervals.length; i++){
-            if(last[1] > intervals[i][0]){
+            if(last[1] >= intervals[i][0]){
                 last[1] = intervals[i][1];
+                res[count] = last;
             } else{
               res[count++] = last;
               last = intervals[i];
             }
         }
-        return res;
+        System.out.println(count);
+        int[][] realRes = new int[count + 1][2];
+        for(int i = 0; i <= count; i++){
+            realRes[i] = res[i];
+        }
+        return realRes;
     }
 
     public static int[][] sort(int[][] m) {
@@ -37,7 +43,7 @@ public class Merge {
     }
 
     public static void main(String[] Args){
-        int[][] intervals = {{1,4}, {4,5}};
+        int[][] intervals = {{1,3},{2,6},{8,10},{15,18}};
         int[][] res = merge(intervals);
 
         for(int i = 0; i < res.length; i++){
