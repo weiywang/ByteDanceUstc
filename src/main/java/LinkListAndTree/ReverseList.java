@@ -1,4 +1,4 @@
-package main.java.LinkListAndTree;
+package LinkListAndTree;
 
 public class ReverseList {
     public static ListNode reverseList(ListNode head){

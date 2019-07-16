@@ -1,4 +1,4 @@
-package main.java.LinkListAndTree;
+package LinkListAndTree;
 
 public class ListNode {
     int val;
