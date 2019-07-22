@@ -1,4 +1,4 @@
-package LinkListAndTree;
+package main.java.LinkListAndTree;
 
 public class AddTwoNumbers {
     //两个链不是等长的，但没有太大的影响

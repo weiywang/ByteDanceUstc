@@ -1,4 +1,4 @@
-package LinkListAndTree;
+package main.java.LinkListAndTree;
 
 public class SortList {
     public ListNode sortList(ListNode head){

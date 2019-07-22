@@ -1,4 +1,4 @@
-package LinkListAndTree;
+package main.java.LinkListAndTree;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
