@@ -31,6 +31,8 @@ public class LongestConsecutive {
                 }
 
                 max = Math.max(max, temp);
+
+                //如果有一半以上的数字都在当前连续子序列里，则不可能有（大于该长度且不包含在当前连续序列）的子序列
                 if(max > nums.length / 2){
                     return max;
                 }
@@ -40,7 +42,7 @@ public class LongestConsecutive {
     }
 
     public static void main(String[] Args){
-        int[] nums = {100, 4, 200, 1, 3, 2};
+        int[] nums = {100, 4, 200, 1, 3, 2, 5};
         int res = longestConsecutive(nums);
         System.out.println(res);
     }
